@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -78,13 +79,9 @@ body * {
 }
 
 .light #switch button {
-right: 0;
-left: initial;
-
+  right: 0;
+  left: initial;
 }
-
-
-
 
 #switch span {
   display: block;
@@ -156,4 +153,15 @@ ul li a:hover {
 
 #social-links a:hover {
   background: var(--highlight-color);
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-light.jpg);
+  }
 }
